@@ -19,7 +19,7 @@ public class UserRegistrationTest extends BaseClass {
 	
 	{  UserRegistrationPage page = new UserRegistrationPage(driver);
 		page.clickRegistrationLink();
-		Assert.assertEquals(page.getTitle(),prop.getProperty("expectedTitle1"));
+		Assert.assertEquals(page.getTitle(),prop.getProperty("expectedTitle"));
 		page.enterUsername(randomeString().toLowerCase());
 		page.enterFirstName(randomeString().toLowerCase());
 		page.enterLastName(randomeString().toLowerCase());
